@@ -14,8 +14,14 @@ const PodcastCard = ({
 }) => {
   return (
     <div className="cursor-point">
-      <figure className="flex flex-col gap-2">
-        <Image src={imgUrl} width={174} height={174} alt={title} />
+      <figure className="flex flex-col gap-2 ">
+        <Image
+          src={imgUrl}
+          width={174}
+          height={174}
+          alt={title}
+          className="h-fit w-full aspect-square rounded-xl 2xl:size-[200px] "
+        />
         <div className="flex flex-col">
           <h1 className="text-16 truncate font-bold text-white-1">{title}</h1>
           <h2 className="text-12 truncate font-normal capitalize text-white-4">
